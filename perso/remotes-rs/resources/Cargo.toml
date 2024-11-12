@@ -1,0 +1,27 @@
+[package]
+name = "resources"
+version = "0.1.0"
+authors = ["Rocky Signavong <rsignavong@gmail.com>"]
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+cfg-if = "1.0.0"
+chrono = { version = "0.4.19", features = ["serde"] }
+derive-new = "0.5.9"
+derive_more = "0.99.17"
+once_cell = { version = "1.10.0", optional = true }
+parking_lot = { version = "0.12.0", optional = true }
+rand = { version = "0.8.5", optional = true }
+repository = { path = "../repository", optional = true }
+serde = { version = "1.0.136", features = ["derive"] }
+serde_json = "1.0.79"
+thiserror = "1.0.30"
+ulid = "0.5.0"
+uuid = { version = "1.0.0", features = ["serde", "v4"] }
+utils = { path = "../utils" }
+validator = "0.14.0"
+
+[features]
+backend = ["once_cell", "parking_lot", "rand", "repository"]

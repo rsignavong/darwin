@@ -1,0 +1,23 @@
+{
+  "body": {
+    "1": {
+      "timestamp": "2020-05-08T14:26:12.060905000Z",
+      "crm_phone_0": "5678",
+      "crm_email_0": "contact@calions.com",
+      "id": "01E7TATCGH2NNEYC5RQRXVCDYM"
+    }
+  },
+  "event": "updated",
+  "index": 11,
+  "metadata": {
+    "context": { "id": "01E7JP0QRT1B2M91GYZT7Y374J", "name": "crm" },
+    "merge": ["01E7TAV27RXFFVTFPHJDTH9GK1"],
+    "profile_updates": [
+      {
+        "key": "01E7HDBPPTTZ41EBZ0JCGAEE23:5678",
+        "old": "01E7TAV27RXFFVTFPHJDTH9GK1",
+        "new": "01E7TATCGH2NNEYC5RQRXVCDYM"
+      }
+    ]
+  }
+}

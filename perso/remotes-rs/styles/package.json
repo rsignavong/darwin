@@ -1,0 +1,19 @@
+{
+  "name": "styles",
+  "version": "1.0.0",
+  "description": "Style for online jobs",
+  "main": "index.js",
+  "scripts": {
+    "build": "postcss ./src/css/main.css -o ./dist/styles.css"
+  },
+  "author": "Rocky Signavong",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.4",
+    "color": "^4.2.3",
+    "cssnano": "^5.1.7",
+    "postcss": "^8.4.12",
+    "postcss-cli": "^9.1.0",
+    "tailwindcss": "^3.0.24"
+  }
+}

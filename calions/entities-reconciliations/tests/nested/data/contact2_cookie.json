@@ -1,0 +1,14 @@
+{
+  "body": {
+    "1": {
+      "id": "contact2",
+      "name": "titi",
+      "nested": {
+        "cookie_id": "cookie2"
+      }
+    }
+  },
+  "event": "event",
+  "index": 0,
+  "metadata": { "activated_mapping_id": "abc" }
+}

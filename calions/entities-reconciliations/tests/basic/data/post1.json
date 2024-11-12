@@ -1,0 +1,12 @@
+{
+  "body": {
+    "1": {
+      "id": "post1",
+      "title": "my first post",
+      "user_id": "user1"
+    }
+  },
+  "event": "event",
+  "index": 0,
+  "metadata": { "activated_mapping_id": "abc" }
+}

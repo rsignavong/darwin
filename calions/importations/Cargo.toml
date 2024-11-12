@@ -1,0 +1,34 @@
+[package]
+name = "importations"
+version = "0.1.0"
+authors = ["Rocky Signavong <rsignavong@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+anyhow = "1.0.32"
+chrono = { version = "0.4.15", features = [ "serde" ] }
+config = "0.10.1"
+csv = "1.1.3"
+data_stream = { git = "ssh://git@gitlab.com/calions/data-stream-rs.git", tag = "v0.6.17", features = [ "tokio-processors" ] }
+derivative = "2.1.1"
+derive_more = "0.99.9"
+derive-new = "0.5.8"
+dotenv = "0.15.0"
+easy-parallel = "3.1.0"
+env_logger = "0.7.1"
+futures = "0.3.5"
+log = "0.4.11"
+nix = "0.18.0"
+once_cell = "1.5.2"
+parking_lot = "0.11.1"
+rusoto_core = "0.45.0"
+rusoto_credential = "0.45.0"
+rusoto_s3 = "0.45.0"
+serde = { version = "1.0.115", features = [ "derive", "rc" ] }
+signal-hook = "0.1.16"
+smol = "0.3.3"
+thiserror = "1.0.20"
+ulid = "0.4.0"
+
+[profile.release]
+lto = true

@@ -1,0 +1,57 @@
+activated_mapping_id = "123"
+organization_id = "123"
+processor_id = "123"
+rust_log="ingestions"
+status_heartbeat_interval = 1_000
+
+[kafka.config]
+brokers = [ "localhost:9092" ]
+# debug = "msg,topic"
+group_id = "ingestions"
+timeout = 30_000
+
+[kafka.consumers.activated_mappings]
+# debug = "msg,topic"
+topics = [""]
+
+[kafka.consumers.gdpr_data_anonymization_request_validations]
+# debug = "all"
+topics = [""]
+
+[kafka.consumers.ingestion_data]
+# debug = "all"
+topics = [""]
+
+[kafka.consumers.reconciliation_records]
+# debug = "msg,topic"
+topics = [""]
+
+[kafka.producers.ingestion_contacts]
+# debug = "msg,topic"
+topic = ""
+
+[kafka.producers.ingestion_data]
+# debug = "all"
+topic = ""
+
+[kafka.producers.gdpr_keys]
+# debug = "msg,topic"
+topic = ""
+
+[kafka.producers.status]
+# debug = "msg,topic"
+topic = ""
+
+[postgresql]
+database = ""
+hostname = ""
+username = ""
+password = ""
+pool_size = 8
+port = 5432
+
+[postgresql.tables.contacts]
+table = ""
+
+[postgresql.tables.gdpr_keys]
+table = ""

@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+  {% block head %}
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+  <link href="/static/css/styles.css" rel="stylesheet">
+  <script type="module" defer>
+    import init, { main } from './static/app/app.js';
+    window.addEventListener('load', async () => {
+      await init();
+      for (const name of ["account", "backoffice", "post"]) {
+        await main(`app-${name}`, name);
+      };
+    });
+  </script>
+  <title>{% block title %}{% endblock title %} - Online Jobs</title>
+  {% endblock head %}
+</head>
+<body>
+  <div class="min-h-screen bg-gray-100">
+    {% block header %}{% endblock header %}
+    <main>
+      <div class="py-6 mx-auto max-w-7xl sm:px-6 lg:px-8">
+        {% block content %}{% endblock content %}
+      </div>
+    </main>
+    {% include "web/footer.html" %}
+  </div>
+</body>
+</html>

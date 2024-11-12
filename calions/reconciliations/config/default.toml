@@ -1,0 +1,25 @@
+processor_id = "123"
+rust_log="reconciliations"
+status_heartbeat_interval = 1_000
+
+[kafka.config]
+brokers = [ "localhost:9092" ]
+# debug = "all"
+group_id = "reconciliations"
+timeout = 5_000
+
+[kafka.consumers.reconciliation_data]
+# debug = "all"
+topics = [""]
+
+[kafka.consumers.reconciliation_process]
+# debug = "all"
+topics = [""]
+
+[kafka.producers.reconciliation_data]
+# debug = "all"
+topic = ""
+
+[kafka.producers.status]
+# debug = "all"
+topic = ""

@@ -1,0 +1,25 @@
+mod error;
+mod job_detail;
+mod job_detail_apply;
+mod job_detail_apply_email;
+mod job_detail_apply_url;
+mod job_detail_description;
+mod job_detail_id;
+mod job_detail_location;
+mod job_detail_position;
+mod job_detail_salary;
+mod job_detail_status;
+mod job_detail_version;
+
+pub use error::JobDetailError;
+pub use job_detail::JobDetail;
+pub use job_detail_apply::JobDetailApply;
+pub use job_detail_apply_email::JobDetailApplyEmail;
+pub use job_detail_apply_url::JobDetailApplyUrl;
+pub use job_detail_description::JobDetailDescription;
+pub use job_detail_id::JobDetailId;
+pub use job_detail_location::JobDetailLocation;
+pub use job_detail_position::JobDetailPosition;
+pub use job_detail_salary::JobDetailSalary;
+pub use job_detail_status::JobDetailStatus;
+pub use job_detail_version::JobDetailVersion;

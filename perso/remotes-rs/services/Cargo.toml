@@ -1,0 +1,12 @@
+[package]
+name = "services"
+version = "0.1.0"
+authors = ["Rocky Signavong <rsignavong@gmail.com>"]
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+repository = { path = "../repository" }
+resources = { path = "../resources", features = ["backend"] }
+thiserror = "1.0.30"

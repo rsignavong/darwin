@@ -1,0 +1,21 @@
+processor_id = "123"
+rust_log="importations"
+status_heartbeat_interval = "123"
+
+[aws]
+access_key = ""
+secret_access_key = ""
+
+[kafka.config]
+brokers = [ "localhost:9092" ]
+# debug = "msg,topic"
+group_id = "importations"
+timeout = 30_000
+
+[kafka.consumers.import_instances]
+# debug = "msg,topic"
+topics = ["calions-int-evt-import_instances"]
+
+[kafka.producers.status]
+# debug = "msg,topic"
+topic = "calions-int-evt-importation_status"

@@ -1,0 +1,20 @@
+# build
+/target
+
+# Editors
+*~
+
+# Systems
+.DS_Store
+erl_crash.dump
+
+# local lib
+**/target
+
+# config
+config/local.toml
+.env
+
+# data
+/data
+/uploads

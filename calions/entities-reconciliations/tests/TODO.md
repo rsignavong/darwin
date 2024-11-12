@@ -1,0 +1,4 @@
+- Child as Main
+- Many to Many (e.g. Users, Basket, Products)
+- 3 entities (e.g. Users, Posts, Comments)
+- Chaining Relationshhips (e.g. A -> B -> C)

@@ -1,0 +1,12 @@
+{
+  "body": {
+    "1": {
+      "id": "navY",
+      "title": "my first post",
+      "cookie_id": "cookieY"
+    }
+  },
+  "event": "event",
+  "index": 0,
+  "metadata": { "activated_mapping_id": "abc" }
+}

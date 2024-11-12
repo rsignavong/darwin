@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="ExDoc v0.22.2">
+    <meta name="project" content="calions_rustler v0.1.0">
+    <title>Calions.Rustler — calions_rustler v0.1.0</title>
+    <link rel="stylesheet" href="dist/elixir-d678dad126d82ddc061f.css" />
+    <script src="dist/sidebar_items-9210a12dbc.js"></script>
+      <script src="docs_config.js"></script>
+    <script async src="dist/app-0103364119015b97e56c.js"></script>
+  </head>
+  <body data-type="modules">
+    <script>try { if(localStorage.getItem('night-mode') === 'true') document.body.className += ' night-mode'; } catch (e) { }</script>
+<div class="main">
+
+<button class="sidebar-button sidebar-toggle">
+  <span class="icon-menu" title="Collapse/expand sidebar"></span>
+</button>
+
+<section class="sidebar">
+  <form class="sidebar-search" action="search.html">
+    <button type="submit" class="search-button">
+      <span class="icon-search" aria-hidden="true"></span>
+    </button>
+    <button type="button" tabindex="-1" class="search-close-button">
+      <span class="icon-cross" title="Cancel search"></span>
+    </button>
+    <label class="search-label">
+      <input name="q" type="text" id="search-list" class="search-input" placeholder="Search..." aria-label="Search" autocomplete="off" />
+    </label>
+  </form>
+
+  <div class="autocomplete">
+    <div class="autocomplete-results">
+    </div>
+  </div>
+
+  <div class="sidebar-header">
+    <div class="sidebar-projectDetails">
+      <a href="api-reference.html" class="sidebar-projectName">
+calions_rustler      </a>
+      <h2 class="sidebar-projectVersion">
+        v0.1.0
+      </h2>
+    </div>
+  </div>
+
+  <ul class="sidebar-listNav">
+    <li><a id="extras-list" href="#full-list">Pages</a></li>
+
+      <li><a id="modules-list" href="#full-list">Modules</a></li>
+
+  </ul>
+  <div class="gradient"></div>
+  <ul id="full-list" class="sidebar-fullList"></ul>
+</section>
+
+<section class="content">
+  <div class="content-outer">
+    <div id="content" class="content-inner">
+
+      <h1>
+        <small class="app-vsn">calions_rustler v0.1.0</small>
+Calions.Rustler      </h1>
+
+
+
+        <section id="summary" class="details-list">
+          <h1 class="section-heading">
+            <a class="hover-link" href="#summary">
+              <span class="icon-link" aria-hidden="true"></span>
+              <span class="sr-only">Link to this section</span>
+            </a>
+            Summary
+          </h1>
+  <div class="summary-functions summary">
+    <h2>
+      <a href="#functions">Functions</a>
+    </h2>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#gdpr_decrypt/2">gdpr_decrypt(a, b)</a>
+  </div>
+    <div class="summary-synopsis"><p>Decrypt an encrypted value with a key and return decrypted binary string</p></div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#gdpr_encrypt/1">gdpr_encrypt(a)</a>
+  </div>
+    <div class="summary-synopsis"><p>Encrypt a binary string and return key with encrypted value</p></div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#gdpr_encrypt/2">gdpr_encrypt(a, b)</a>
+  </div>
+    <div class="summary-synopsis"><p>Encrypt a binary string with a key and return encrypted value</p></div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#gdpr_key/0">gdpr_key()</a>
+  </div>
+    <div class="summary-synopsis"><p>Generate a GDPR key</p></div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#ulid/1">ulid(a)</a>
+  </div>
+    <div class="summary-synopsis"><p>Generate a Monotonic ULID</p></div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#uuid_v4/1">uuid_v4(a)</a>
+  </div>
+    <div class="summary-synopsis"><p>Generate a V4 UUID</p></div>
+</div>
+  </div>
+        </section>
+
+        <section id="functions" class="details-list">
+          <h1 class="section-heading">
+            <a class="hover-link" href="#functions">
+              <span class="icon-link" aria-hidden="true"></span>
+              <span class="sr-only">Link to this section</span>
+            </a>
+Functions          </h1>
+          <div class="functions-list">
+<section class="detail" id="gdpr_decrypt/2">
+  <div class="detail-header">
+    <a href="#gdpr_decrypt/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">gdpr_decrypt(a, b)</h1>
+  </div>
+
+  <section class="docstring">
+
+<p>Decrypt an encrypted value with a key and return decrypted binary string</p><p>Returns:</p><ul><li><code class="inline">{:ok, &quot;decrypted_value&quot;}</code> in case of success</li><li><code class="inline">:error_decrypt</code> when decrypting encrypted value with the given key failed</li><li><code class="inline">:error_value</code> when parsing encrypted value failed</li><li><code class="inline">:error_key</code> when parsing key failed</li></ul><h2 id="gdpr_decrypt/2-examples" class="section-heading">
+  <a href="#gdpr_decrypt/2-examples" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Examples
+</h2>
+<pre><code class="nohighlight makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="nc">Calions.Rustler</span><span class="o">.</span><span class="n">gdpr_decrypt</span><span class="p" data-group-id="9797206517-1">(</span><span class="s">&quot;secret&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;my_key&quot;</span><span class="p" data-group-id="9797206517-1">)</span><span class="w">
+</span><span class="p" data-group-id="9797206517-2">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;secret&quot;</span><span class="p" data-group-id="9797206517-2">}</span></code></pre>  </section>
+</section>
+<section class="detail" id="gdpr_encrypt/1">
+  <div class="detail-header">
+    <a href="#gdpr_encrypt/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">gdpr_encrypt(a)</h1>
+  </div>
+
+  <section class="docstring">
+
+<p>Encrypt a binary string and return key with encrypted value</p><p>Returns:</p><ul><li><code class="inline">{:ok, [&quot;key&quot;, &quot;encrypted_value&quot;]}</code> in case of success</li><li><code class="inline">:error_encrypt</code> when generating key or encrypting value</li></ul><h2 id="gdpr_encrypt/1-examples" class="section-heading">
+  <a href="#gdpr_encrypt/1-examples" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Examples
+</h2>
+<pre><code class="nohighlight makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="nc">Calions.Rustler</span><span class="o">.</span><span class="n">gdpr_encrypt</span><span class="p" data-group-id="0934189919-1">(</span><span class="s">&quot;secret&quot;</span><span class="p" data-group-id="0934189919-1">)</span><span class="w">
+</span><span class="p" data-group-id="0934189919-2">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="0934189919-3">[</span><span class="s">&quot;key&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;encrypted_value&quot;</span><span class="p" data-group-id="0934189919-3">]</span><span class="p" data-group-id="0934189919-2">}</span></code></pre>  </section>
+</section>
+<section class="detail" id="gdpr_encrypt/2">
+  <div class="detail-header">
+    <a href="#gdpr_encrypt/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">gdpr_encrypt(a, b)</h1>
+  </div>
+
+  <section class="docstring">
+
+<p>Encrypt a binary string with a key and return encrypted value</p><p>Returns:</p><ul><li><code class="inline">{:ok, &quot;encrypted_value&quot;}</code> in case of success</li><li><code class="inline">:error_encrypt_with_key</code> when encrypting value with given key failed</li><li><code class="inline">:error_key</code> when parsing key failed</li></ul><h2 id="gdpr_encrypt/2-examples" class="section-heading">
+  <a href="#gdpr_encrypt/2-examples" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Examples
+</h2>
+<pre><code class="nohighlight makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="nc">Calions.Rustler</span><span class="o">.</span><span class="n">gdpr_encrypt</span><span class="p" data-group-id="7198499795-1">(</span><span class="s">&quot;secret&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;my_key&quot;</span><span class="p" data-group-id="7198499795-1">)</span><span class="w">
+</span><span class="p" data-group-id="7198499795-2">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;encrypted_value&quot;</span><span class="p" data-group-id="7198499795-2">}</span></code></pre>  </section>
+</section>
+<section class="detail" id="gdpr_key/0">
+  <div class="detail-header">
+    <a href="#gdpr_key/0" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">gdpr_key()</h1>
+  </div>
+
+  <section class="docstring">
+
+<p>Generate a GDPR key</p><p>Returns:</p><ul><li><code class="inline">{:ok, &quot;key&quot;}</code> in case of success</li><li><code class="inline">:error_key</code> when generating key failed</li></ul><h2 id="gdpr_key/0-examples" class="section-heading">
+  <a href="#gdpr_key/0-examples" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Examples
+</h2>
+<pre><code class="nohighlight makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="nc">Calions.Rustler</span><span class="o">.</span><span class="n">gdpr_key</span><span class="p" data-group-id="9712451701-1">(</span><span class="p" data-group-id="9712451701-1">)</span><span class="w">
+</span><span class="p" data-group-id="9712451701-2">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;my_key&quot;</span><span class="p" data-group-id="9712451701-2">}</span></code></pre>  </section>
+</section>
+<section class="detail" id="ulid/1">
+  <div class="detail-header">
+    <a href="#ulid/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">ulid(a)</h1>
+  </div>
+
+  <section class="docstring">
+
+<p>Generate a Monotonic ULID</p><h2 id="ulid/1-examples" class="section-heading">
+  <a href="#ulid/1-examples" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Examples
+</h2>
+<pre><code class="nohighlight makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="nc">Calions.Rustler</span><span class="o">.</span><span class="n">ulid</span><span class="p" data-group-id="5964455863-1">(</span><span class="p" data-group-id="5964455863-1">)</span><span class="w">
+</span><span class="p" data-group-id="5964455863-2">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;01EB7ETY5EH3VSY8GP945XATN2&quot;</span><span class="p" data-group-id="5964455863-2">}</span></code></pre>  </section>
+</section>
+<section class="detail" id="uuid_v4/1">
+  <div class="detail-header">
+    <a href="#uuid_v4/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">uuid_v4(a)</h1>
+  </div>
+
+  <section class="docstring">
+
+<p>Generate a V4 UUID</p><h2 id="uuid_v4/1-examples" class="section-heading">
+  <a href="#uuid_v4/1-examples" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Examples
+</h2>
+<pre><code class="nohighlight makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="nc">Calions.Rustler</span><span class="o">.</span><span class="n">uuid_v4</span><span class="p" data-group-id="6080153996-1">(</span><span class="p" data-group-id="6080153996-1">)</span><span class="w">
+</span><span class="s">&quot;42926399-b766-4b35-af5d-a71d820ceaf0&quot;</span></code></pre>  </section>
+</section>
+          </div>
+        </section>
+      <footer class="footer">
+        <p>
+          <span class="line">
+            Built using
+            <a href="https://github.com/elixir-lang/ex_doc" title="ExDoc" target="_blank" rel="help noopener">ExDoc</a> (v0.22.2),
+          </span>
+          <span class="line">
+            designed by
+            <a href="https://twitter.com/dignifiedquire" target="_blank" rel="noopener" title="@dignifiedquire">Friedel Ziegelmayer</a>.
+          </span>
+        </p>
+        <p>
+          <button class="line footer-button display-shortcuts-help">
+            Display keyboard shortcuts
+          </button>
+          <button class="line footer-button night-mode-toggle">
+            Toggle night mode
+          </button>
+          <button class="line footer-button display-quick-switch">
+            Go to a HexDocs package
+          </button>
+          <button class="line footer-button tooltips-toggle">
+            <span class="tooltips-option-disable">Disable tooltips</span>
+            <span class="tooltips-option-enable">Enable tooltips</span>
+          </button>
+        </p>
+      </footer>
+    </div>
+  </div>
+</section>
+</div>
+  </body>
+</html>

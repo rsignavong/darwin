@@ -1,0 +1,53 @@
+{
+  "body": {
+    "1": {
+      "activated_mapping_id": "abc",
+      "mappings": {
+        "entities": [
+          {
+            "topics": [
+              "calions-int-commands-users"
+            ],
+            "type": "users"
+          },
+          {
+            "topics": [
+              "calions-int-evt-posts"
+            ],
+            "type": "posts"
+          }
+        ],
+        "relationships": [
+          {
+            "entity": {
+              "type": "posts",
+              "matching_mappings": [
+                "user_id"
+              ],
+              "method": "fixed",
+              "relationship_method": "upsert"
+            },
+            "belongs_to": {
+              "type": "users",
+              "matching_mappings": [
+                "id"
+              ],
+              "method": "fixed",
+              "relationship_method": "fixed"
+            }
+          }
+        ]
+      },
+      "processor_id": "aaa",
+      "reconciliations": {
+        "entities": [
+          "users",
+          "posts"
+        ],
+        "topic": "calions-int-evt-entities_reconciliations"
+      }
+    }
+  },
+  "event": "event",
+  "index": 0
+}

@@ -1,0 +1,12 @@
+{
+  "body": {
+    "1": {
+      "id": "nav2",
+      "title": "my first nav",
+      "cookie_id2": "cookie2"
+    }
+  },
+  "event": "event",
+  "index": 0,
+  "metadata": { "activated_mapping_id": "abc" }
+}

@@ -1,0 +1,54 @@
+{
+  "body": {
+    "1": {
+      "activated_mapping_id": "abc",
+      "mappings": {
+        "entities": [
+          {
+            "topics": [
+              "calions-int-evt-contacts"
+            ],
+            "type": "contacts"
+          },
+          {
+            "topics": [
+              "calions-int-evt-navs"
+            ],
+            "type": "navs"
+          }
+        ],
+        "relationships": [
+          {
+            "entity": {
+              "type": "navs",
+              "matching_mappings": [
+                "cookie_id"
+              ],
+              "method": "append",
+              "relationship_method": "fixed"
+            },
+            "belongs_to": {
+              "type": "contacts",
+              "matching_mappings": [
+                "web_cookie_id",
+                "crm_cookie_id"
+              ],
+              "method": "fixed",
+              "relationship_method": "append"
+            }
+          }
+        ]
+      },
+      "processor_id": "aaa",
+      "reconciliations": {
+        "entities": [
+          "contacts",
+          "navs"
+        ],
+        "topic": "calions-int-evt-entities_reconciliations"
+      }
+    }
+  },
+  "event": "event",
+  "index": 0
+}

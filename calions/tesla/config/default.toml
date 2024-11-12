@@ -1,0 +1,8 @@
+log_level = "info"
+
+[tesla]
+data = "./data"
+file_size = 100
+pool_size = 4
+
+

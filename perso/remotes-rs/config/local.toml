@@ -1,0 +1,16 @@
+[repository]
+database = "remotes_dev"
+hostname = "192.168.27.27"
+username = "rockysignavong"
+password = ""
+pool_size = 8
+port = 5432
+
+[web]
+listen = "localhost:3000"
+domains = ["board:board", "home:www", "listings:find"]
+
+[web.cookie]
+name = "sid"
+private_key = "qNEhIqDVmYgeazmFYDLWERqHoG67Dayz"
+secure = false

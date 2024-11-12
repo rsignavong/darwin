@@ -1,0 +1,44 @@
+activated_mapping_id = "bd7ee694-3ef3-4281-b759-91bcd6fd51ed"
+organization_id = "85c8dc4c-0613-447f-8554-0a7beae82ecf"
+processor_id = "ccd291af-a1f5-40bf-ab27-83c15cdd29ef"
+# rust_log="ingestions,data_stream,librdkafka,rdkafka"
+rust_log="ingestions,data_stream"
+status_heartbeat_interval = 120_000
+
+[kafka.config]
+brokers = [ "kafka:9092" ]
+group_id = "contact-ingestions-worker-000"
+timeout = 30_000
+
+[kafka.consumers.activated_mappings]
+topics = ["calions-int-evt-activated_mappings"]
+
+[kafka.consumers.gdpr_data_anonymization_request_validations]
+topics = ["calions-int-evt-gdpr_data_anonymization_request_validations"]
+
+[kafka.consumers.reconciliation_records]
+topics = ["calions-int-evt-reconciliation_records"]
+
+[kafka.producers.ingestion_contacts]
+topic = "calions-int-evt-ingested_contacts"
+
+[kafka.producers.gdpr_keys]
+topic = "calions-int-evt-ingested_contacts_gdpr_keys"
+
+[kafka.producers.status]
+topic = "calions-int-evt-contact_ingestion_statuses"
+
+[postgresql]
+database = "contact_ingestions_test"
+hostname = "192.168.27.27"
+username = "rockysignavong"
+password = ""
+pool_size = 10
+port = 5432
+
+[postgresql.tables.contacts]
+table = "ingested_contacts"
+
+[postgresql.tables.gdpr_keys]
+table = "gdpr_keys"
+

@@ -1,0 +1,43 @@
+{
+  "body": {
+    "1": {
+      "id": "01ES75MZ5Z3H4E6GSZQ81Q20FN",
+      "record": {
+        "crm_bis_firstname_0": "Michou",
+        "crm_bis_lastname_0": "Muche",
+        "crm_bis_email_0": "test@test.com",
+        "crm_bis_phone_0": "123456789"
+      }
+    }
+  },
+  "event": "event",
+  "index": 0,
+  "metadata": {
+    "activated_mapping_id": "bd7ee694-3ef3-4281-b759-91bcd6fd51ed",
+    "merges": ["01ES765GPKR555Q5A1G1GCVQ44"],
+    "logs": [
+      {
+        "key": "01ES74VF0Z2TMYBD9NS02A5XPP:test@test.com",
+        "old": "01ES765GPKR555Q5A1G1GCVQ44",
+        "new": "01ES75MZ5Z3H4E6GSZQ81Q20FN"
+      },
+      {
+        "key": "01ES74VF10734CCYFHS6296VYK:712345689",
+        "old": "01ES765GPKR555Q5A1G1GCVQ44",
+        "new": "01ES75MZ5Z3H4E6GSZQ81Q20FN"
+      }
+    ],
+    "profiles_count": 7,
+    "reconciliations_count": 10,
+    "source": {
+      "type": "importation",
+      "data": {
+        "bucket": "file-imports",
+        "file": "organizations/85c8dc4c-0613-447f-8554-0a7beae82ecf/csv-file-import-4aee2bc7-e5c7-4c3d-8bc8-d084d6a0b8fd.csv",
+        "file_id": "a52d8287-6dde-4932-b8d9-c1b59cca94b2",
+        "line": 1
+      }
+    },
+    "transaction_id": "01ESP7YWTJB9B199KRAAP5E63A"
+  }
+}

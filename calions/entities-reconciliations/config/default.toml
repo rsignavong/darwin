@@ -1,0 +1,22 @@
+processor_id = "123"
+organization_id = "5caf3fae-0bb0-4589-8126-5f1cb066dd17"
+rust_log="entities_reconciliations"
+status_heartbeat_interval = 1_000
+
+[kafka.config]
+brokers = [ "localhost:9092" ]
+# debug = "all"
+group_id = "entities-reconciliations"
+timeout = 5_000
+
+[kafka.consumers.reconciliation_data]
+# debug = "all"
+topics = [""]
+
+[kafka.consumers.reconciliation_command]
+# debug = "all"
+topics = [""]
+
+[kafka.producers.status]
+# debug = "all"
+topic = ""

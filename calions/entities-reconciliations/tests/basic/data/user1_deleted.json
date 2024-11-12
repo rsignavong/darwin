@@ -1,0 +1,10 @@
+{
+  "body": {
+    "1": {
+      "id": "user1"
+    }
+  },
+  "event": "event",
+  "index": 0,
+  "metadata": { "activated_mapping_id": "abc" }
+}

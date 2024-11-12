@@ -1,0 +1,143 @@
+{
+  "body": {
+    "1": {
+      "id": "bd7ee694-3ef3-4281-b759-91bcd6fd51ed",
+      "mappings": [
+        {
+          "context_id": "af0778bf-7597-4af2-bed3-a5f9411c80fc",
+          "context_name": "crm",
+          "field_alias": "crm_email_0",
+          "field_type": "email",
+          "id": "d604005a-df0f-4689-afd3-072ebaf470c3",
+          "is_appendable": false,
+          "is_contact_point": true,
+          "is_gdpr": false,
+          "matching_mappings": [],
+          "name": "email",
+          "version": 0
+        },
+        {
+          "context_id": "870ba5ae-7d7a-4bef-bd33-d63971db40fa",
+          "context_name": "nav",
+          "field_alias": "nav_phone_0",
+          "field_type": "phone",
+          "id": "03f9ba08-d8c4-4c2d-b430-5929879c42c0",
+          "is_appendable": false,
+          "is_contact_point": true,
+          "is_gdpr": false,
+          "matching_mappings": [],
+          "name": "phone",
+          "version": 0
+        },
+        {
+          "context_id": "870ba5ae-7d7a-4bef-bd33-d63971db40fa",
+          "context_name": "nav",
+          "field_alias": "nav_email_0",
+          "field_type": "email",
+          "id": "d9d571ee-3861-44b5-9cc3-1227cb6287e9",
+          "is_appendable": false,
+          "is_contact_point": true,
+          "is_gdpr": false,
+          "matching_mappings": ["crm_bis_email_0"],
+          "name": "email",
+          "version": 0
+        },
+        {
+          "context_id": "870ba5ae-7d7a-4bef-bd33-d63971db40fa",
+          "context_name": "nav",
+          "field_alias": "nav_cookie_0",
+          "field_type": "cookie_id",
+          "id": "00645fdb-70bf-462b-979d-00560564e4f0",
+          "is_appendable": true,
+          "is_contact_point": false,
+          "is_gdpr": false,
+          "matching_mappings": [],
+          "name": "cookie",
+          "version": 0
+        },
+        {
+          "context_id": "1c786aca-09e2-4172-b199-0d998da6320c",
+          "context_name": "crm_bis",
+          "field_alias": "crm_bis_email_0",
+          "field_type": "email",
+          "id": "4a5797aa-c7b0-4682-8991-4d5614c6af2f",
+          "is_appendable": false,
+          "is_contact_point": true,
+          "is_gdpr": false,
+          "matching_mappings": ["nav_email_0"],
+          "name": "email",
+          "version": 0
+        },
+        {
+          "context_id": "1c786aca-09e2-4172-b199-0d998da6320c",
+          "context_name": "crm_bis",
+          "field_alias": "crm_bis_firstname_0",
+          "field_type": "firstname",
+          "id": "bfb44243-e0a0-4dbf-b230-f669920813e9",
+          "is_appendable": false,
+          "is_contact_point": false,
+          "is_gdpr": false,
+          "matching_mappings": [],
+          "name": "firstname",
+          "version": 0
+        },
+        {
+          "context_id": "1c786aca-09e2-4172-b199-0d998da6320c",
+          "context_name": "crm_bis",
+          "field_alias": "crm_bis_lastname_0",
+          "field_type": "lastname",
+          "id": "d80aa681-b71b-4dc3-ad89-885b5e59053b",
+          "is_appendable": true,
+          "is_contact_point": false,
+          "is_gdpr": false,
+          "matching_mappings": [],
+          "name": "lastname",
+          "version": 0
+        },
+        {
+          "context_id": "1c786aca-09e2-4172-b199-0d998da6320c",
+          "context_name": "crm_bis",
+          "field_alias": "crm_bis_phone_0",
+          "field_type": "phone",
+          "id": "8845f1d8-fb16-4372-a6a0-062e4e347ecf",
+          "is_appendable": false,
+          "is_contact_point": true,
+          "is_gdpr": false,
+          "matching_mappings": ["web_phone_0"],
+          "name": "phone",
+          "version": 0
+        },
+        {
+          "context_id": "5c579bca-a699-4151-a95e-a1b21596af6f",
+          "context_name": "web",
+          "field_alias": "web_phone_0",
+          "field_type": "phone",
+          "id": "843dcbb8-2de1-4741-b35f-9ef93d7a12d3",
+          "is_appendable": false,
+          "is_contact_point": true,
+          "is_gdpr": false,
+          "matching_mappings": ["crm_bis_phone_0"],
+          "name": "phone",
+          "version": 0
+        },
+        {
+          "context_id": "5c579bca-a699-4151-a95e-a1b21596af6f",
+          "context_name": "web",
+          "field_alias": "web_name_0",
+          "field_type": "lastname",
+          "id": "5d49d8c5-8420-47bd-ab48-87dc24442b79",
+          "is_appendable": true,
+          "is_contact_point": false,
+          "is_gdpr": false,
+          "matching_mappings": [],
+          "name": "name",
+          "version": 0
+        }
+      ],
+      "name": "am1",
+      "organization_id": "85c8dc4c-0613-447f-8554-0a7beae82ecf"
+    }
+  },
+  "event": "event",
+  "index": 0
+}

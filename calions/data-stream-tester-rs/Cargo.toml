@@ -1,0 +1,24 @@
+[package]
+name = "data-stream-tester-rs"
+version = "0.1.0"
+authors = ["Rocky Signavong <rsignavong@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+crossbeam = "0.7.3"
+data_stream = { git = "https://gitlab.com/calions/data-stream-rs.git", version = "0.2.14-alpha.0" }
+derivative = "2.1.1"
+derive-new = "0.5.8"
+dialoguer = "0.6.2"
+env_logger = "0.7.1"
+failure = "0.1.8"
+log = "0.4.8"
+rdkafka = { version = "0.23.1", features = ["cmake-build"] }
+serde = { version = "1.0.106", features = [ "derive" ] }
+tokio = { version = "0.2.20", features = ["blocking", "macros", "rt-threaded", "sync"] }
+ulid = "0.3.1"
+
+[profile.release]
+lto = true

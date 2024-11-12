@@ -1,0 +1,156 @@
+{
+  "body": {
+    "1": {
+      "activated_mappings": {
+        "id": "9d3e23b3-3a0e-4689-9a9d-65d62b8bba71",
+        "mappings": [
+          {
+            "context_id": "084e61fe-9d74-484a-9298-6775cee7f45e",
+            "context_name": "crm",
+            "field_alias": "crm_lastname_0",
+            "field_type": "lastname",
+            "id": "b460edd1-068d-4329-be34-9104307d5e77",
+            "is_appendable": false,
+            "is_contact_point": false,
+            "is_gdpr": false,
+            "matching_mappings": [],
+            "name": "lastname",
+            "version": 0
+          },
+          {
+            "context_id": "084e61fe-9d74-484a-9298-6775cee7f45e",
+            "context_name": "crm",
+            "field_alias": "crm_firstname_0",
+            "field_type": "firstname",
+            "id": "25f6a4e3-daff-477c-a256-7749bf4e7056",
+            "is_appendable": true,
+            "is_contact_point": false,
+            "is_gdpr": false,
+            "matching_mappings": [],
+            "name": "firstname",
+            "version": 0
+          },
+          {
+            "context_id": "084e61fe-9d74-484a-9298-6775cee7f45e",
+            "context_name": "crm",
+            "field_alias": "crm_email_0",
+            "field_type": "email",
+            "id": "247afcac-dc11-497b-9010-62ddbd3235f0",
+            "is_appendable": false,
+            "is_contact_point": true,
+            "is_gdpr": false,
+            "matching_mappings": ["web_email_0"],
+            "name": "email",
+            "version": 0
+          },
+          {
+            "context_id": "084e61fe-9d74-484a-9298-6775cee7f45e",
+            "context_name": "crm",
+            "field_alias": "crm_phone_0",
+            "field_type": "phone",
+            "id": "d8c33b9d-ff2d-4702-89c9-923709552619",
+            "is_appendable": false,
+            "is_contact_point": true,
+            "is_gdpr": false,
+            "matching_mappings": ["call_phone_0"],
+            "name": "phone",
+            "version": 0
+          },
+          {
+            "context_id": "5c3cd093-79b1-402c-bde8-f2b9feb9e76f",
+            "context_name": "web",
+            "field_alias": "web_lastname_0",
+            "field_type": "lastname",
+            "id": "489200ad-5a57-44d9-ab6a-445bbadb7db3",
+            "is_appendable": false,
+            "is_contact_point": false,
+            "is_gdpr": false,
+            "matching_mappings": [],
+            "name": "lastname",
+            "version": 0
+          },
+          {
+            "context_id": "5c3cd093-79b1-402c-bde8-f2b9feb9e76f",
+            "context_name": "web",
+            "field_alias": "web_firstname_0",
+            "field_type": "firstname",
+            "id": "0af52fed-8efe-43d1-8662-747ecb41e09a",
+            "is_appendable": false,
+            "is_contact_point": false,
+            "is_gdpr": false,
+            "matching_mappings": [],
+            "name": "firstname",
+            "version": 0
+          },
+          {
+            "context_id": "5c3cd093-79b1-402c-bde8-f2b9feb9e76f",
+            "context_name": "web",
+            "field_alias": "web_email_0",
+            "field_type": "email",
+            "id": "2cc5826c-e673-47b6-89ce-569d20cd341e",
+            "is_appendable": false,
+            "is_contact_point": true,
+            "is_gdpr": false,
+            "matching_mappings": ["crm_email_0"],
+            "name": "email",
+            "version": 0
+          },
+          {
+            "context_id": "37203229-4219-4257-a998-ce733e034beb",
+            "context_name": "call",
+            "field_alias": "call_lastname_0",
+            "field_type": "lastname",
+            "id": "7b8ba8ad-7d78-47dc-9afc-973579864b6e",
+            "is_appendable": false,
+            "is_contact_point": false,
+            "is_gdpr": false,
+            "matching_mappings": [],
+            "name": "lastname",
+            "version": 0
+          },
+          {
+            "context_id": "37203229-4219-4257-a998-ce733e034beb",
+            "context_name": "call",
+            "field_alias": "call_firstname_0",
+            "field_type": "firstname",
+            "id": "26c2212d-56a8-4bad-8649-eaeeb37364b2",
+            "is_appendable": false,
+            "is_contact_point": false,
+            "is_gdpr": false,
+            "matching_mappings": [],
+            "name": "firstname",
+            "version": 0
+          },
+          {
+            "context_id": "37203229-4219-4257-a998-ce733e034beb",
+            "context_name": "call",
+            "field_alias": "call_phone_0",
+            "field_type": "phone",
+            "id": "dfac8225-ef63-4994-9818-79f2669d23e3",
+            "is_appendable": false,
+            "is_contact_point": true,
+            "is_gdpr": false,
+            "matching_mappings": ["crm_phone_0"],
+            "name": "phone",
+            "version": 0
+          }
+        ]
+      },
+      "data_topic": "calions-int-evt-reconciliation_data",
+      "gdpr_data_anonymization_request_validations_topics": [
+        "calions-int-evt-gdpr_data_anonymization_request_validations"
+      ],
+      "id": "5a286c6b-8b12-4ed6-a896-03424b3ccd5b",
+      "organization_id": "2fcb148f-c25c-4268-83c4-32c8c0a80eb1",
+      "processor_id": "3f780ae1-95e6-4aea-9f95-4222f605f286",
+      "raw_records_topics": [
+        "calions-int-evt-importation_records",
+        "calions-int-evt-client_records",
+        "calions-int-evt-consent_records"
+      ],
+      "reconciliations_records_topic": "calions-int-evt-reconciliation_records"
+    }
+  },
+  "event": "event",
+  "index": 0
+}

@@ -1,0 +1,31 @@
+{
+  "body": {
+    "1": {
+      "id": "01ETRH00YH8PQW1HHEFGP1BQZ2",
+      "record": {
+        "call_lastname_0": "Signa",
+        "call_firstname_0": "Rusty",
+        "call_phone_0": "0663199641"
+      }
+    }
+  },
+  "event": "event",
+  "index": 0,
+  "metadata": {
+    "activated_mapping_id": "9d3e23b3-3a0e-4689-9a9d-65d62b8bba71",
+    "import_instance": {
+      "id": "025131fa-fffc-432a-b5b0-c592330cf47a",
+      "progression": 11.764705882352942,
+      "is_finished": false
+    },
+    "source": {
+      "type": "importation",
+      "data": {
+        "bucket": "file-imports",
+        "file": "organizations/2fcb148f-c25c-4268-83c4-32c8c0a80eb1/csv-file-import-8f6ff2ce-407d-4700-a3b3-972cb5a48ef1.csv",
+        "file_id": "b0e5064f-6dad-48c8-8b07-a5ce570cea5e",
+        "line": 1
+      }
+    }
+  }
+}

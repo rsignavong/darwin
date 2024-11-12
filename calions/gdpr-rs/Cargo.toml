@@ -1,0 +1,23 @@
+[package]
+name = "gdpr"
+version = "0.1.10-alpha.0"
+authors = ["Rocky Signavong <rsignavong@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+aes-gcm = "0.6.0"
+base64 = "0.12.3"
+derive-new = "0.5.8"
+rand = "0.7.3"
+serde = { version = "1.0.115", features = [ "derive" ], optional = true }
+thiserror = "1.0.20"
+
+[profile.release]
+lto = true
+
+[features]
+default = []
+
+use-serde = [ "serde" ]

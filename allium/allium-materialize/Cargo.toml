@@ -1,0 +1,15 @@
+[package]
+name = "allium-materialize"
+version = "0.1.15"
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+Inflector = "0.11.4"
+heck = "0.4.0"
+serde = { version = "1.0.133", features = ["derive"] }
+serde_json = "1.0.75"
+serde_yaml = "0.8.23"
+sha2 = "0.10.1"
+thiserror = "1.0.30"

@@ -1,0 +1,16 @@
+[repository]
+database = ""
+hostname = ""
+username = ""
+password = ""
+pool_size = 8
+port = 5432
+
+[web]
+listen = "127.0.0.1:3000"
+domains = []
+
+[web.cookie]
+name = "sid"
+private_key = "qNEhIqDVmYgeazmFYDLWERqHoG67Dayz"
+secure = false

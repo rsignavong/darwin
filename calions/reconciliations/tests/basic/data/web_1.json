@@ -1,0 +1,31 @@
+{
+  "body": {
+    "1": {
+      "id": "01ETRGY7N0V0GAT5TFQH4JMPD6",
+      "record": {
+        "web_firstname_0": "Panda",
+        "web_email_0": "rsignavong@gmail.com",
+        "web_lastname_0": "Sig"
+      }
+    }
+  },
+  "event": "event",
+  "index": 0,
+  "metadata": {
+    "activated_mapping_id": "9d3e23b3-3a0e-4689-9a9d-65d62b8bba71",
+    "import_instance": {
+      "id": "7c351b5a-56e5-4e7c-9948-230a3b9928f1",
+      "progression": 41.666666666666664,
+      "is_finished": false
+    },
+    "source": {
+      "type": "importation",
+      "data": {
+        "bucket": "file-imports",
+        "file": "organizations/2fcb148f-c25c-4268-83c4-32c8c0a80eb1/csv-file-import-a21eaf9b-6e9d-4480-8911-b9bb45458fab.csv",
+        "file_id": "88c0b161-3a6a-4cd5-83aa-693fb069505f",
+        "line": 1
+      }
+    }
+  }
+}

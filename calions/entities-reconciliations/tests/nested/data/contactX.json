@@ -1,0 +1,14 @@
+{
+  "body": {
+    "1": {
+      "id": "contactX",
+      "name": "toto",
+      "nested": {
+        "cookie_id": "cookieX"
+      }
+    }
+  },
+  "event": "event",
+  "index": 0,
+  "metadata": { "activated_mapping_id": "abc" }
+}

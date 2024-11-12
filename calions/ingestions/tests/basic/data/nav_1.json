@@ -1,0 +1,33 @@
+{
+  "body": {
+    "1": {
+      "id": "01ES765GPKR555Q5A1G1GCVQ44",
+      "record": { "nav_cookie_0": "cookie2", "nav_email_0": "test@test.com" }
+    }
+  },
+  "event": "event",
+  "index": 0,
+  "metadata": {
+    "activated_mapping_id": "bd7ee694-3ef3-4281-b759-91bcd6fd51ed",
+    "merges": [],
+    "logs": [
+      {
+        "key": "01ES74VF0Z2TMYBD9NS02A5XPP:test@test.com",
+        "old": null,
+        "new": "01ES765GPKR555Q5A1G1GCVQ44"
+      }
+    ],
+    "profiles_count": 5,
+    "reconciliations_count": 6,
+    "source": {
+      "type": "importation",
+      "data": {
+        "bucket": "file-imports",
+        "file": "organizations/85c8dc4c-0613-447f-8554-0a7beae82ecf/csv-file-import-9d5754f5-410c-4405-a614-3dd48c4883dc.csv",
+        "file_id": "a4ea3453-1952-41fc-a141-6b5b4f049c87",
+        "line": 4
+      }
+    },
+    "transaction_id": "01ESP7YWTJ8BSH66Y1872PGY0J"
+  }
+}

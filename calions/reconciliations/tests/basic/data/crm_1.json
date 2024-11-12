@@ -1,0 +1,32 @@
+{
+  "body": {
+    "1": {
+      "id": "01ETRH2B6QFV2NQ6R8XWT7HB84",
+      "record": {
+        "crm_email_0": "rsignavong@gmail.com",
+        "crm_lastname_0": "Signavong",
+        "crm_firstname_0": "Rocky",
+        "crm_phone_0": "0663199641"
+      }
+    }
+  },
+  "event": "event",
+  "index": 0,
+  "metadata": {
+    "activated_mapping_id": "9d3e23b3-3a0e-4689-9a9d-65d62b8bba71",
+    "import_instance": {
+      "id": "6a4ce484-201b-458b-873e-6d1881128ec9",
+      "progression": 10.0,
+      "is_finished": false
+    },
+    "source": {
+      "type": "importation",
+      "data": {
+        "bucket": "file-imports",
+        "file": "organizations/2fcb148f-c25c-4268-83c4-32c8c0a80eb1/csv-file-import-c4a97376-2817-4f1d-89a4-127e38806738.csv",
+        "file_id": "ddc639c5-750c-4e3b-b255-b50b05d708b7",
+        "line": 1
+      }
+    }
+  }
+}

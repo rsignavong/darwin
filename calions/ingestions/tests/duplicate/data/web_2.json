@@ -1,0 +1,31 @@
+{
+  "body": {
+    "1": {
+      "id": "01ES75MZ5Z3H4E6GSZQ81Q20FN",
+      "record": {
+        "web_name_0": "peach",
+        "web_nickname_0": "  pacman  ",
+        "web_phone_0": "123456789"
+      }
+    }
+  },
+  "event": "event",
+  "index": 0,
+  "metadata": {
+    "activated_mapping_id": "bd7ee694-3ef3-4281-b759-91bcd6fd51ed",
+    "merges": [],
+    "logs": [],
+    "profiles_count": 3,
+    "reconciliations_count": 4,
+    "source": {
+      "type": "importation",
+      "data": {
+        "bucket": "file-imports",
+        "file": "organizations/85c8dc4c-0613-447f-8554-0a7beae82ecf/csv-file-import-adf5fe26-9307-42a7-8def-e51ee89385ad.csv",
+        "file_id": "1a7dd688-6e6a-4770-9f26-cd54958fdc82",
+        "line": 3
+      }
+    },
+    "transaction_id": "01ESP88XPNDZ0SJJ5V25R5W9HX"
+  }
+}

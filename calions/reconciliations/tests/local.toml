@@ -1,0 +1,24 @@
+processor_id = "3f780ae1-95e6-4aea-9f95-4222f605f286"
+# rust_log="reconciliations,data_stream,librdkafka,rdkafka"
+rust_log="reconciliations,data_stream"
+status_heartbeat_interval = 120_000
+
+[kafka.config]
+brokers = [ "kafka:9092" ]
+# debug = "all"
+group_id = "reconciliations-000"
+timeout = 30_000
+
+[kafka.consumers.reconciliation_data]
+topics = ["calions-int-evt-reconciliation_data"]
+
+[kafka.consumers.reconciliation_process]
+topics = ["calions-int-evt-reconciliations"]
+
+[kafka.producers.reconciliation_data]
+# debug = "all"
+topic = "calions-int-evt-reconciliation_data"
+
+[kafka.producers.status]
+# debug = "msg,topic"
+topic = "calions-int-evt-reconciliation_statuses"
